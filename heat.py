@@ -68,8 +68,8 @@ def calc_heating_rate(Mej,vej, Amin,Amax,ffraction,kappa_effs,alpha_max,alpha_mi
         each_elect_ths = np.zeros(len(ts))
         Xfraction = fraction[A]/Xtot
     
-        filename = '../table/'+str(A)+'.txt'
-        filename2 = 'heat'+str(A)+'.dat'
+        filename = 'input_files/table/'+str(A)+'.txt'
+        filename2 = 'output_files/heat'+str(A)+'.dat'
     
 #A, Z, Q[MeV], Egamma[MeV], Eelec[MeV], Eneutrino[MeV], tau[s]
         fchain = pd.read_csv(filename,delim_whitespace=True,header=None)
