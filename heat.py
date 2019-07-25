@@ -2,7 +2,7 @@ from numpy import pi
 import numpy as np
 import pandas as pd
 import bateman as bt
-import thermalizationnew as th
+import thermalization as th
 from scipy import optimize
 day = 86400.
 eV = 1.60218e-12
