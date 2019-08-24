@@ -497,6 +497,7 @@ def calc_heating_rate_sf(Mej,vej, Amin,Amax,ffraction,ffission_A,ffission_X,kapp
                                                                                   
                             t_th = (1.+dt_th)*t_th
                     if(Egamma>0.):
+                        Z = fchain[1][i]
                         kappa_eff = kappa_effs[A][Z]
                         fth_gamma = th.calc_gamma_deposition(kappa_eff,t,Mej,vej,alpha_min,alpha_max,n)
                     else:
@@ -575,6 +576,7 @@ def calc_heating_rate_sf(Mej,vej, Amin,Amax,ffraction,ffission_A,ffission_X,kapp
                                                                                   
                             t_th = (1.+dt_th)*t_th
                     if(Egamma>0.):
+                        Z = fchain[1][i]
                         kappa_eff = kappa_effs[A][Z]
                         fth_gamma = th.calc_gamma_deposition(kappa_eff,t,Mej,vej,alpha_min,alpha_max,n)
                     else:
